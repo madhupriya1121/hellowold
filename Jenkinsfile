@@ -1,9 +1,9 @@
 pipeline {
-  agent { label 'master' }
+  agent { label 'main' }
 
   tools {
-    jdk 'Java8'
-    maven 'Maven3.3.9'
+    jdk 'Java-8'
+    maven 'Maven'
   }
   
   environment {
@@ -16,7 +16,7 @@ pipeline {
 
  }
  parameters {
-      string(defaultValue: 'master', description: 'Please type any branch name to deploy', name: 'Branch')
+      string(defaultValue: 'main', description: 'Please type any branch name to deploy', name: 'Branch')
  }  
 
 stages {
