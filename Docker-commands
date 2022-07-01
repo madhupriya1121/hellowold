@@ -1,0 +1,3 @@
+we can also connect and disconnect a running container with docker network using below commands
+docker network connect <network-name> <container-name>
+docker network disconnect <network-name> <container-name>
